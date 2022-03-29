@@ -21,6 +21,5 @@ module.exports = {
     'no-unused-vars': 'error',
     'no-restricted-globals': ['error', ...DOMGlobals, ...NodeGlobals],
     'no-console': 'off',
-  },
-  excludes: ['rollup.config.js']
+  }
 };

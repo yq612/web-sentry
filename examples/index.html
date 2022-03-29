@@ -7,6 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="../lib/index.js"></script>
+    <script type="module">
+      import WebSentry from "../lib/index.esm.js";
+      new WebSentry();
+
+      fetch("http://example.com/movies.json");
+
+      setTimeout(() => {
+        fetch("http://example.com/audios.json").catch((err) => {
+          console.info(`${err}`);
+        });
+      }, 4000);
+    </script>
   </body>
 </html>
