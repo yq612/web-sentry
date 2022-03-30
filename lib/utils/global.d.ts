@@ -4,4 +4,4 @@
 /**
  * 安全返回全局对象
  */
-export declare function getBlobalObject(): {};
+export declare function getGlobalObject(): {};

@@ -1,6 +1,5 @@
 declare class WebSentry {
-    fetach: boolean;
-    constructor(options: any);
+    constructor(options?: any);
     setup(): void;
     start(): void;
 }

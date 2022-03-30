@@ -7,16 +7,30 @@
     <title>Document</title>
   </head>
   <body>
-    <script type="module">
+    <!-- <script type="module" src="../lib/index.esm.js"></script> -->
+    <script type="module" crossorigin="anonymous">
       import WebSentry from "../lib/index.esm.js";
       new WebSentry();
 
-      fetch("http://example.com/movies.json");
+      // fetch("http://example.com/movies.json");
 
+      // setTimeout(() => {
+      //   fetch("http://example.com/audios.json").catch((err) => {
+      //     console.info(`${err}`);
+      //   });
+      // }, 4000);
+      // var xhttp = new XMLHttpRequest();
+      // xhttp.onreadystatechange = function () {
+      //   if (this.readyState == 4 && this.status == 200) {
+      //     document.getElementById("demo").innerHTML = this.responseText;
+      //   }
+      // };
+      // xhttp.open("GET", "/demo/js/ajax_info.txt", true);
+      // xhttp.send();
       setTimeout(() => {
-        fetch("http://example.com/audios.json").catch((err) => {
-          console.info(`${err}`);
-        });
+        const image = document.createElement("img");
+        image.setAttribute("src", "./123.jpg");
+        document.body.append(image);
       }, 4000);
     </script>
   </body>
