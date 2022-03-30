@@ -6,7 +6,7 @@ const emptyGlobalObject = {};
 /**
  * 安全返回全局对象
  */
-export function getBlobalObject() {
+export function getGlobalObject() {
   return isNodeEnv()
     ? global
     : typeof window !== "undefined" // eslint-disable-line no-restricted-globals
